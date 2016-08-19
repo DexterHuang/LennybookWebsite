@@ -1,0 +1,249 @@
+body {
+    font-family: Merriweather;
+    background-image: url("img/concrete_seamless.png");
+    background-repeat: repeat;
+}
+body .container {
+    padding: 0 0 0 0;
+}
+h1 {
+    font-weight: bold;
+    font-size: 60px;
+    letter-spacing: 5px;
+    color: white;
+    text-shadow: 5px 5px 60px #5C5D5E;
+    text-align: center;
+    margin: 0;
+}
+p {
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+}
+.title-wrapper p {
+    font-family: Merriweather;
+    font-size: 20px;
+    font-style: italic;
+    margin: 10px;
+    color: white;
+}
+.btn {
+    padding: 10px 30px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 10px 0 50px 0;
+    transition: all 0.5s ease;
+}
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+.btn-primary {
+    background: rgba(66, 66, 66, 0.6);
+    color: #ffffff;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open> .dropdown-toggle.btn-primary {
+    border: 3px solid rgb(255, 255, 255);
+    background: rgba(15, 15, 15, 0.8);
+    padding: 10px 40px;
+}
+.btn-primary:active, .btn-primary.active {
+    background: rgba(15, 15, 15, 0.8);
+    box-shadow: none;
+}
+.swiper-container {
+    height: 100vh;
+    width: 100vw;
+}
+.navigationBar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: url("img/concrete_seamless.png");
+    background-blend-mode: color;
+    background-color: #333;
+}
+.navigationBar li {
+    align-content: center;
+    float: left;
+}
+.navigationBar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.5s ease;
+}
+.navigationBar {
+    opacity: 0.8;
+    filter: blur(10px);
+    transition: all 0.5s ease;
+}
+.navigationBar li a:hover {
+    background-color: #000000;
+    transition: all 0.5s ease;
+}
+.navigationBar li a:active {
+    background-color: #ffffff;
+    transition: all 0.5s ease;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: table;
+    width: 100%;
+    font-size: 0px;
+    color: black;
+}
+.title-wrapper {
+    position: absolute;
+    margin-top: 30vh;
+    text-align: center;
+    width: 100vw;
+    z-index: 5;
+    vertical-align: middle;
+}
+.portfolio-container {
+    column-count: 2;
+    column-gap: 0;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 50px 0 rgba(0, 0, 0, 0.19);
+    vertical-align: middle;
+    text-align: center;
+}
+.profolio-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    width: 100%;
+}
+.profolio-img:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#portfolio-button-block {
+    position: absolute;
+    text-align: center;
+    right: 0;
+    width: 100%;
+    margin: 0;
+    padding-top: 36vh;
+    z-index: 10;
+}
+.biography-container {
+    z-index: 5;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    height: auto;
+}
+.blur-shadow {
+    -webkit-box-shadow: 0px 0px 103px -19px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 103px -19px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 103px -19px rgba(0, 0, 0, 1);
+}
+.biography-container h1 {
+    margin-top: 0;
+    padding: 10 10 10 10;
+}
+.biography-container .text-block {
+    margin: 50px 50px 50px 50px;
+    width: 40%;
+    display: block;
+    float: right;
+}
+.biography-container .img-block {
+    padding: 10 10 10 10;
+    display: block;
+}
+#bio-img {
+    display: block;
+    margin: 50 50 50 50;
+    align-self: center;
+    width: auto;
+    border-radius: 1%;
+}
+.client-conatiner {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+.client-conatiner h1 {
+    font-family: Merriweather;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    margin-top: 20;
+    padding: 80 10 10 10;
+}
+.client-conatiner p, .projects-container p {
+    color: rgb(163, 163, 163);
+    margin-top: 0;
+    padding: 20;
+}
+.container {
+    height: auto;
+}
+.logo-img {
+    display: block;
+    border: 3px solid rgb(206, 206, 206);
+    background-color: rgb(155, 155, 155);
+    margin: auto;
+    margin-bottom: 30px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 256px;
+}
+.contact-container {
+    background-image: url("img/white_wall_hash.png");
+}
+.contact-container h1 {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    text-shadow: 0 0 0 0;
+    padding-top: 50;
+}
+.contact-text {
+    padding: 50px 0 60px 0;
+}
+.projects-container .col-sm-4 {
+    text-align: center;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+.projects-container .img {
+    background: rgb(255, 255, 255);
+    text-align: center;
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+.projects-container .img:hover {
+    background: rgb(255, 255, 255);
+    opacity: 0.7;
+    transition: all 0.5s ease;
+}
+.projects-container .btn-primary {
+    text-align: center;
+    vertical-align: middle;
+}
+.sticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+    transition: all 0.5s ease;
+}
