@@ -1,35 +1,74 @@
 <html>
-<meta name="image:slidePhoto1" content="img/photo3.jpg" />
 
 <head>
     <!-- Bootstrap styleSheets Latest compiled and minified CSS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
-    <link rel="stylesheet" type="text/css" href="main.css">
 
-    <!-- Fonts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+
+    <style type="text/css">
+        {
+            CustomCSS
+        }
+    </style>
+
+    <!-- Fonts
+    {block:IfGoogleAnalyticsID} {text:Google Analytics ID} {/block:IfGoogleAnalyticsID}-->
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-    <title>Lnnybook photography</title>
+    <title>Lennybook photography</title>
+
+    <!-- Vriables -->
+    <meta name="image:logo" content="">
+    <meta name="image:hugeSliderImg1" content="">
+    <meta name="image:hugeSliderImg2" content="">
+    <meta name="image:hugeSliderImg3" content="">
+    <meta name="image:hugeSliderImg4" content="">
+    <meta name="image:smallSliderImg1" content="">
+    <meta name="image:smallSliderImg2" content="">
+    <meta name="image:smallSliderImg3" content="">
+    <meta name="image:smallSliderImg4" content="">
+    <meta name="image:yourFacePhoto" content="">
+    <meta name="image:clientLogo1" content="">
+    <meta name="image:clientLogo2" content="">
+    <meta name="image:clientLogo3" content="">
+    <meta name="image:clientLogo4" content="">
+    <meta name="image:projectPhoto1" content="">
+    <meta name="image:projectPhoto2" content="">
+    <meta name="image:projectPhoto3" content="">
+
+    <meta name="image:BehindBackground" content="">
+    <meta name="image:background1" content="">
+    <meta name="image:background2" content="">
+
+    <!-- Link Variables -->
+    <meta name="text:portfolioLink" content="#">
+    <meta name="text:projectLink1" content="#">
+    <meta name="text:projectLink2" content="#">
+    <meta name="text:projectLink3" content="#">
 </head>
 
-<body>
+<body style="background-image: url({image:behindBackground})">
     <div class="home-page-wrapper center-block">
         <div class="title-wrapper ">
-            <img src="img/logo.png" class="img-responsive center-block" />
+            <img src="{image:logo}" class="img-responsive center-block" />
             <h1 class="title rotate3D">LENNYBOOK</h1>
-            <p>Professional Photograpy</p>
+            <p>Life Event Photograpy</p>
             <p>
-                <a class="btn btn-primary scrollLink" goto=".home-page-wrapper" href="#"><span class="glyphicon glyphicon-bookmark"></span>  Learn More! <span class="glyphicon glyphicon-bookmark"></a>
+                <a class="btn btn-primary scrollLink" goto=".portfolio-container" href="#"><span class="glyphicon glyphicon-bookmark"></span>  Learn More! <span class="glyphicon glyphicon-bookmark"></a>
             </p>
         </div>
         <div id="home-page-swiper" class="swiper-container">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide" style="background-image: url('https://secure.static.tumblr.com/8c672778990c62e03556328d08c5492b/j24rqy9/x6mnz3irz/tumblr_static_9n5cy2oi1u040wosw4kks0kkg_2048_v2.jpg')">12</div>
-                <div class="swiper-slide" style="background-image: url('https://secure.static.tumblr.com/8c672778990c62e03556328d08c5492b/j24rqy9/x6mnz3irz/tumblr_static_9n5cy2oi1u040wosw4kks0kkg_2048_v2.jpg')">12</div>
-                <div class="swiper-slide" style="background-image: url('https://secure.static.tumblr.com/8c672778990c62e03556328d08c5492b/j24rqy9/x6mnz3irz/tumblr_static_9n5cy2oi1u040wosw4kks0kkg_2048_v2.jpg')">12</div>
+                <div class="swiper-slide" style="background-image: url({image:hugeSliderImg1})">12</div>
+                <div class="swiper-slide" style="background-image: url({image:hugeSliderImg2})">12</div>
+                <div class="swiper-slide" style="background-image: url({image:hugeSliderImg3})">12</div>
+                <div class="swiper-slide" style="background-image: url({image:hugeSliderImg4})">12</div>
             </div <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
             <div class="start-swiper-pagination"></div>
@@ -76,7 +115,7 @@
     <br>
     <br>
     <br>
-    <div class="container blur-shadow" style="background-image: url(img/symphony.png)">
+    <div class="container blur-shadow" style="background-image: url({image:background1})">
         <!--
         <div class="portfolio-container">
             <div id="portfolio-button-block">
@@ -97,17 +136,27 @@
         </div>
       -->
         <!-- small Swiper -->
+
         <div class="portfolio-container">
             <div class="swiper-container portfolio-swiper">
                 <div class="overlay">
-                    <a class="btn btn-primary" href="#">View My Portfolio</a>
+                    <a class="btn btn-primary" href="{text:portfolioLink}" target="_blank">View My Portfolio</a>
                 </div>
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
-                    <div class="swiper-slide" style="background-image:url(img/photo1.jpg)"></div>
-                    <div class="swiper-slide" style="background-image:url(img/photo2.jpg)"></div>
-                    <div class="swiper-slide" style="background-image:url(img/photo3.jpg)"></div>
+                    <div class="swiper-slide">
+                        <img class="img-responsive" src="{image:smallSliderImg1}" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="img-responsive" src="{image:smallSliderImg2}" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="img-responsive" src="{image:smallSliderImg3}" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="img-responsive" src="{image:smallSliderImg4}" alt="" />
+                    </div>
                 </div>
                 <!-- If we need pagination -->
                 <div class="swiper-pagination swiper-pagination-white"></div>
@@ -119,42 +168,51 @@
             <div class="col-md-6">
                 <h2>Len Ishimaru</h2>
                 <p>
-                    Len Ishimaru Born in Bali Indonesia From Tokyo Japan 2012 -“Fine art” Photo-exhibition Indonesia Bali 2013 - Graduated Gandhi Memorial International school Bali - Work as freelance photographer 2015 - Graduated professional photography integrated course
-                    in Tokyo -“Moment of Beauty　瞬美"　Photo-exhibition Japan Tokyo Le Deco Clients Redbull .Tinder .Jackdaniels .Wahl&case k.k .Skrillex .exile studio coast (ageha). Brand Tokyo. Feria. ELE Tokyo. Womb. cats. fame. etc works on beauty of
-                    life living, shoots live performance and portraits
+                    <br>1994-Born in Bali Indonesia From Tokyo Japan
+                    <br> 2012 -“Fine art” Photo-exhibition Indonesia Bali
+                    <br> 2013 - Graduated Gandhi Memorial International school Bali - Work as freelance photographer
+                    <br> 2015 - Graduated professional photography integrated course in Tokyo
+                    <br>-“Moment of Beauty　瞬美"　Photo-exhibition Japan Tokyo Le Deco
+                    <br>works on beauty of life living, shoots live performance and portraits
                     <span class="breakingLine"></span>
-                    <h2>石丸　蓮</h2> 石丸　蓮　 インドネシアのバリ島生まれ。 出身は、東京。 ２０１２年 　"ファインアート”写真展をインドネシア　バリ島 ２０１３年 　Gandhi Memorial International school Baliを卒業 　フリーランスの写真家として働く ２０１５年 　写真学園プロコース総合科を卒業 　”瞬美”　写真展を　東京　ルデコで
+                    <h2>石丸 蓮</h2> インドネシアのバリ島生まれ
+                    <br>出身東京
+                    <br>２０１２年 "ファインアート”写真展をインドネシア バリ島
+                    <br>２０１３年 Gandhi Memorial International school Baliを卒業
+                    <br>個人事業写真家として働き始める
+                    <br>２０１５年 写真学園プロコース総合科を卒業 ”瞬美” 写真展を 東京 ルデコで行う。
+                    <br>人が生きている美学をテーマにて、主にライブミュージックやポートレートを撮っている。
                 </p>
             </div>
             <div class="col-md-6">
-                <img id="bio-img" class="img-responsive center-block" src="https://67.media.tumblr.com/76f153d97a91bf0d154d5f374a26e6a4/tumblr_inline_nn2sha3vHg1r2h3ls_500.jpg" />
+                <img id="bio-img" class="img-responsive center-block" src={image:yourFacePhoto} />
             </div>
         </div>
         <div class="clearfix"> </div>
         <!-- CLIENTS -->
-        <div class="client-conatiner" style="background-image: url(img/zwartevilt.png)">
+        <div class="client-conatiner" style="background-image: url({image:background2})">
             <h1>CLIENTS</h1>
             <p>
                 Len Ishimaru has collaberated with countless international and local business/individual
                 <br /> with passion and proffessionalism he brings best quality to every clients
             </p>
             <div class="col-sm-6">
-                <img class="logo-img" src="img/Skrillex_logo.png" />
+                <img class="logo-img" src={image:clientLogo1} />
             </div>
             <div class="col-sm-6">
-                <img class="logo-img" src="img/Sony_logo.png" />
+                <img class="logo-img" src={image:clientLogo2} />
             </div>
             <div class="col-sm-6">
-                <img class="logo-img" src="img/Red_Bull_logo.png" />
+                <img class="logo-img" src={image:clientLogo3} />
             </div>
             <div class="col-sm-6">
-                <img class="logo-img" src="img/Tinder_logo.png" />
+                <img class="logo-img" src={image:clientLogo4} />
             </div>
             <div class="clearfix">
 
             </div>
         </div>
-        <!-- Project -->
+        <!-- PROJECTS -->
         <div class="projects-container" style="background-image: url({image:background2})">
             <div class="col-sm-4">
                 <a href={text:projectLink1}>
@@ -187,21 +245,19 @@
             <h1>Contact</h1>
             <div class="contact-text">
                 <p>
-                    ✉︎ lennybook4@gmail.com
-                    <br /> ✆080-4854-0
+                    <spam class="glyphicon glyphicon-envelope"></spam> lennybook4@gmail.com
+                    <br />
+                    <spam class="glyphicon glyphicon-phone"> </spam>+81-(0)80-4854-0194
                 </p>
             </div>
         </div>
 
         <div class="footer-container">
-            <p>
-                <spam class="glyphicon glyphicon-copyright-mark"></spam> 2016 by Len Ishimaru</p>
+            <p>© 2014-2016 Ren Ishimaru</p>
         </div>
     </div>
     </div>
     <div class="footer">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js"></script>
         <!-- bootstrap script-->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <!-- Swiper script -->
@@ -209,7 +265,6 @@
             $(document).ready(function() {
                 //initialize swiper when document ready
                 var mySwiper = new Swiper('.swiper-container', {
-
                     pagination: '.swiper-pagination',
                     paginationClickable: true,
                     autoplay: 10000,
@@ -220,6 +275,7 @@
                 });
             });
         </script>
+
         <!-- navigationBar follow and function -->
         <script type="text/javascript">
             $(document).ready(function() {
@@ -263,7 +319,7 @@
                 var resizeF = function() {
                     var port = $(".portfolio-container .swiper-container");
                     port.height(port.width() * 0.5625);
-                };
+                }
                 resizeF();
                 $(window).resize(resizeF);
             });

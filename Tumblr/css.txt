@@ -1,6 +1,5 @@
 body {
     font-family: Merriweather;
-    background-image: url("img/concrete_seamless.png");
     background-repeat: repeat;
 }
 body .container {
@@ -106,7 +105,7 @@ p {
     vertical-align: middle;
 }
 .portfolio-swiper {
-    height: 100%;
+    height: 30vw;
     vertical-align: middle;
 }
 .portfolio-swiper .overlay {
@@ -116,6 +115,7 @@ p {
     position: absolute;
     z-index: 10;
     top: 45%;
+    transition: all 1s ease;
 }
 .portfolio-swiper .btn {
     margin: 10px;
@@ -186,7 +186,6 @@ p {
     max-width: 256px;
 }
 .contact-container {
-    background-image: url("img/white_wall_hash.png");
 }
 .contact-container h1 {
     font-weight: bold;

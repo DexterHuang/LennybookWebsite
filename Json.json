@@ -1,0 +1,40 @@
+pen:
+    a: magic 2, ad 46
+q: 24
+q: magic 34, ad 46
+e: 49
+
+ad:
+    a: magic 3, ad 49
+q: 23
+q: magic 33, ad 49
+e: 50
+
+{
+    schoolName: "huehuehue",
+    modules: "",
+    students: {
+        pairs: {
+            {
+                key: "{ studentID",
+                value: "a123"
+            },
+            {
+                key: "name",
+                value: "dexter"
+            },
+            {
+                key: "modules",
+                value: ""
+            }
+        }
+    },
+    name: "dexter",
+    modules: "",
+    taskMarks: "",
+    {
+        studentID: "a124",
+        name: "huang",
+        modules: "",
+        taskMarks: ""
+    }
